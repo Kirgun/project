@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block body %}
+<from action="">
+	Search: <input type = "text">
+	<button class="btn btn-success"type = "submit">search</button>
+{% for staff in staffs %}
+<label class="col - sm - 4">First name:{{staff.first_name}}</label>
+<label class ="col-sm-3">Lust name:{{staff.first_name}}</label>
+<label class="col-sm-5"Position:{{staff.position}}</label>
+{%endfor%}
+{% endblock body %}
